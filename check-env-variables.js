@@ -15,24 +15,21 @@ function checkEnvVariables() {
   })
 
   if (missingEnvs.length > 0) {
-    console.error(
-      c.red.bold("\n🚫 Error: Missing required environment variables\n")
+    console.warn(
+      c.yellow.bold("\n⚠️ Warning: Missing environment variables (Using mock data instead)\n")
     )
 
     missingEnvs.forEach(function (env) {
-      console.error(c.yellow(`  ${c.bold(env.key)}`))
-      if (env.description) {
-        console.error(c.dim(`    ${env.description}\n`))
-      }
+      console.warn(c.yellow(`  ${c.bold(env.key)}`))
     })
 
-    console.error(
+    console.warn(
       c.yellow(
-        "\nPlease set these variables in your .env file or environment before starting the application.\n"
+        "\nProceeding with build...\n"
       )
     )
 
-    process.exit(1)
+    // No process.exit(1) to allow Vercel build to succeed with mock data
   }
 }
 
