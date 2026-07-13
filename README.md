@@ -1,127 +1,56 @@
-> ⚠️ This repository is now deprecated. Use the [dtc-starter](https://github.com/medusajs/dtc-starter) instead.
+# Lamparosos 🟢👕
 
-<p align="center">
-  <a href="https://www.medusajs.com">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/59018053/229103275-b5e482bb-4601-46e6-8142-244f531cebdb.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/59018053/229103726-e5b529a3-9b3f-4970-8a1f-c6af37f087bf.svg">
-    <img alt="Medusa logo" src="https://user-images.githubusercontent.com/59018053/229103726-e5b529a3-9b3f-4970-8a1f-c6af37f087bf.svg">
-    </picture>
-  </a>
-</p>
+**Sátira, humor negro y verdades incómodas. No nos hacemos cargo si alguien se ofende.**
 
-<h1 align="center">
-  Medusa Next.js Starter Template
-</h1>
+Bienvenidos al repositorio oficial de **Lamparosos**, una marca de camisetas que hablan por ti. Este proyecto es el *frontend* de nuestra tienda de comercio electrónico, diseñado para ofrecer una experiencia de usuario premium, oscura e impactante, con un toque "streetwear" y detalles en nuestro característico verde ácido.
 
-<p align="center">
-Combine Medusa's modules for your commerce backend with the newest Next.js 15 features for a performant storefront.</p>
+## 🚀 Tecnologías Principales
 
-<p align="center">
-  <a href="https://github.com/medusajs/medusa/blob/master/CONTRIBUTING.md">
-    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat" alt="PRs welcome!" />
-  </a>
-  <a href="https://discord.gg/xpCwq3Kfn8">
-    <img src="https://img.shields.io/badge/chat-on%20discord-7289DA.svg" alt="Discord Chat" />
-  </a>
-  <a href="https://twitter.com/intent/follow?screen_name=medusajs">
-    <img src="https://img.shields.io/twitter/follow/medusajs.svg?label=Follow%20@medusajs" alt="Follow @medusajs" />
-  </a>
-</p>
+Este proyecto fue construido utilizando herramientas de última generación para asegurar el máximo rendimiento y una UI espectacular:
 
-### Prerequisites
+- **[Next.js 15 (App Router)](https://nextjs.org/)**: Renderizado híbrido, ruteo avanzado y un rendimiento increíble.
+- **[Tailwind CSS](https://tailwindcss.com/)**: Diseño a medida, desde nuestra paleta de colores personalizada hasta las animaciones de Marquesina (Ticker Tape).
+- **[Medusa.js](https://medusajs.com/)**: El motor de comercio electrónico headless que alimenta los datos de nuestros productos. (Actualmente funcionando con datos simulados vía mock para desarrollo UI).
+- **[TypeScript](https://www.typescriptlang.org/)**: Para un código seguro y sin errores.
 
-To use the [Next.js Starter Template](https://medusajs.com/nextjs-commerce/), you should have a Medusa server running locally on port 9000.
-For a quick setup, run:
+## ✨ Características Destacadas
 
-```shell
-npx create-medusa-app@latest
+- **Diseño Premium**: Interfaz en modo oscuro profundo con detalles de neón verde ácido.
+- **Efectos de Interacción (WOW Factor)**: 
+  - Tarjetas de producto con *glow effect*, escalado suave y overlay oscuro.
+  - Botones redondos masivos con brillos interactivos.
+  - Marquesina animada infinita en la página de inicio.
+- **Página de Detalle de Producto Mejorada**: Títulos masivos, precios luminosos y selector de tallas cuadrado moderno.
+- **Optimizado para Imágenes**: Uso de `object-contain` en las galerías para que nuestros diseños jamás sean recortados.
+
+## 🛠️ Cómo correr el proyecto localmente
+
+### 1. Clonar el repositorio
+```bash
+git clone https://github.com/DiegoRozo23/lamparosos.git
+cd lamparosos
 ```
 
-Check out [create-medusa-app docs](https://docs.medusajs.com/learn/installation) for more details and troubleshooting.
-
-# Overview
-
-The Medusa Next.js Starter is built with:
-
-- [Next.js](https://nextjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Typescript](https://www.typescriptlang.org/)
-- [Medusa](https://medusajs.com/)
-
-Features include:
-
-- Full ecommerce support:
-  - Product Detail Page
-  - Product Overview Page
-  - Product Collections
-  - Cart
-  - Checkout with Stripe
-  - User Accounts
-  - Order Details
-- Full Next.js 15 support:
-  - App Router
-  - Next fetching/caching
-  - Server Components
-  - Server Actions
-  - Streaming
-  - Static Pre-Rendering
-
-# Quickstart
-
-### Setting up the environment variables
-
-Navigate into your projects directory and get your environment variables ready:
-
-```shell
-cd nextjs-starter-medusa/
-mv .env.template .env.local
+### 2. Instalar las dependencias
+Asegúrate de tener Node.js instalado y ejecuta:
+```bash
+npm install
 ```
 
-### Install dependencies
-
-Use Yarn to install all dependencies.
-
-```shell
-yarn
+### 3. Configurar variables de entorno
+Copia el archivo de ejemplo para las variables locales:
+```bash
+cp .env.template .env.local
 ```
 
-### Start developing
+### 4. Iniciar el servidor de desarrollo
+El proyecto incluye un mock interno para cargar nuestros diseños locales, así que no necesitas el servidor de Medusa funcionando para probar el frontend visualmente.
 
-You are now ready to start up your project.
-
-```shell
-yarn dev
+```bash
+npm run dev
 ```
 
-### Open the code and start customizing
+Abre tu navegador y entra a `http://localhost:8000`. ¡Prepárate para ofenderte (o reírte)!
 
-Your site is now running at http://localhost:8000!
-
-# Payment integrations
-
-By default this starter supports the following payment integrations
-
-- [Stripe](https://stripe.com/)
-
-To enable the integrations you need to add the following to your `.env.local` file:
-
-```shell
-NEXT_PUBLIC_STRIPE_KEY=<your-stripe-public-key>
-```
-
-You'll also need to setup the integrations in your Medusa server. See the [Medusa documentation](https://docs.medusajs.com) for more information on how to configure [Stripe](https://docs.medusajs.com/resources/commerce-modules/payment/payment-provider/stripe#main).
-
-# Resources
-
-## Learn more about Medusa
-
-- [Website](https://www.medusajs.com/)
-- [GitHub](https://github.com/medusajs)
-- [Documentation](https://docs.medusajs.com/)
-
-## Learn more about Next.js
-
-- [Website](https://nextjs.org/)
-- [GitHub](https://github.com/vercel/next.js)
-- [Documentation](https://nextjs.org/docs)
+---
+*Hecho con 💚 (ácido) para los que no se toman la vida tan en serio.*
