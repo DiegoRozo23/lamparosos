@@ -1,0 +1,13 @@
+Mock intercepting /store/products URL: /store/products SEARCH:  HANDLE: undefined matchedCount: 10 firstMatched: adicto-cajeras-ara
+Mock intercepting /store/products URL: /store/products SEARCH:  HANDLE: undefined matchedCount: 10 firstMatched: adicto-cajeras-ara
+Mock intercepting /store/products URL: /store/products SEARCH:  HANDLE: undefined matchedCount: 10 firstMatched: adicto-cajeras-ara
+Mock intercepting /store/products URL: /store/products SEARCH:  HANDLE: undefined matchedCount: 10 firstMatched: adicto-cajeras-ara
+Mock intercepting /store/products URL: /store/products SEARCH:  HANDLE: undefined matchedCount: 10 firstMatched: adicto-cajeras-ara
+Mock intercepting /store/products URL: /store/products SEARCH:  HANDLE: undefined matchedCount: 10 firstMatched: adicto-cajeras-ara
+Mock intercepting /store/products URL: /store/products SEARCH:  HANDLE: undefined matchedCount: 10 firstMatched: adicto-cajeras-ara
+Mock intercepting /store/products URL: /store/products SEARCH:  HANDLE: undefined matchedCount: 10 firstMatched: adicto-cajeras-ara
+Mock intercepting /store/products URL: /store/products SEARCH:  HANDLE: undefined matchedCount: 10 firstMatched: adicto-cajeras-ara
+Mock intercepting /store/products URL: /store/products SEARCH:  HANDLE: undefined matchedCount: 10 firstMatched: adicto-cajeras-ara
+Mock intercepting /store/products URL: /store/products SEARCH:  HANDLE: undefined matchedCount: 10 firstMatched: adicto-cajeras-ara
+Mock intercepting /store/products URL: /store/products SEARCH:  HANDLE: undefined matchedCount: 10 firstMatched: adicto-cajeras-ara
+Mock intercepting /store/products URL: /store/products SEARCH:  HANDLE: undefined matchedCount: 10 firstMatched: adicto-cajeras-ara
